@@ -1,0 +1,332 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+body{
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Cabin', sans-serif; */
+  font-size:14px;
+  text-transform:uppercase;
+}
+ 
+/* .bg-color.scrolling{
+  background-color: white;
+} */
+
+.bg-color{
+  /* background-color: white;
+  height: auto;
+  max-height: 10px;
+  min-height: 20px; */
+}
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(51, 51, 240); */
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+code {
+  padding: 0 0.15rem;
+  background: #f5f5f5;
+  border-radius: 0.2rem;
+}
+
+.navbar-bg{
+  position: fixed;
+  z-index: 1000;
+  background: transparent !important;
+  min-width: 100%;
+  text-align: center !important;
+  align-items: center !important;
+}
+.video-hg{
+  height: 100vh;
+}
+/* ============================================================ */
+.navEl a {
+  /* font-family: 'Cabin', sans-serif;
+  font-size:14px;
+  text-transform:uppercase; */
+  color: black;
+  letter-spacing:2px;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.7);
+}
+ 
+.dropdown-menu {
+  background:#03727d;
+}
+a.dropdown-toggle {
+  color:#dfdfdf !important;
+}
+a.dropdown-item:hover {
+  color:#03727d !important;
+}
+.nav-item a{
+  color:#dfdfdf;
+}
+.nav-item a:hover {
+  color:#fff;
+}
+.nav-item{
+  min-width:12vw;
+}
+#mainNavigation {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:123;
+  /* padding-bottom:120px; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+/* background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); */
+ /* FF3.6-15 */
+/* background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); */
+ /* Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); */
+ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); */
+ /* IE6-9 */
+}
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav a{
+  background:transparent;
+  padding:12px;
+}
+/* ========================================================= */
+.dropdown-bg{
+  background-color: red;
+}
+/* ========================================================= */
+.abut-hg{
+  height: auto;
+  /* background-color: red; */
+  /* height: 100vh; */
+  /* background-color: red; */
+}
+.card-hg{
+  /* height: auto; */
+  margin: 5px 5px 0 0;
+  border: none;
+}
+.card-img-hg{
+  height: auto;
+  max-height: 400px;
+}
+.card-p-bg-1{
+  /* background-color: #70ECF3; */
+  margin-right: 5px;
+  height: auto;
+  max-height: 366px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+}
+.conta-marg{
+  margin: 0 0 0 0;
+  max-width: 100%;
+}
+.row-marg{
+  margin: 0 0 0 0;
+  max-width: 100%;
+}
+.card-text-1{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* background-color: red; */
+}
+.card-1{
+  background-color: #024562;
+  color: #9BF5F5;
+}
+.card-2{
+  background-color: #23A5DA;
+  color: #194F98;
+}
+.card-3{
+  background-color: #66449B;
+  color: #FBC59D;
+}
+/* .slid-hg{
+  height: auto;
+  max-height: 500px;
+  text-align: center;
+} */
+/* =================================================== */
+.slide-posit{
+  position: relative;
+  height: auto;
+  max-height: 100vh;
+  min-height: 100vh;
+  /* top: 20%; */
+  /* margin-top: 38%; */
+  /* margin-bottom: 5%; */
+  /* height: auto; */
+}
+.img-cont{
+  height: auto;
+  max-height: 100vh;
+  min-height: 100vh;
+  /* align-items: center; */
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+/* .slid-hg{
+  height: auto;
+}
+.slid-hg-1 img , .slid-hg-2 img, .slid-hg-3 img{
+  height: 100vh;
+} */
+/* @media screen and (min-width: 250px) {
+  .slide-posit {
+    position: relative;
+    margin-top: 38%;
+    bottom: 0;
+  }
+} */
+/* @media (min-width: 250px) and (max-width: 724px){
+  .slide-posit {
+    position: relative;
+    margin-top: 180%;
+    margin-bottom: 0%;
+    bottom: 0;
+  }
+} */
+/* ======================================================== */
+/* .nav-btn-drob{
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-style: hidden;
+  color: wheat;
+  color:#fff;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.7);
+  margin-top: 1%;
+} */
+.bgcolor-scrolled{
+  /* background-color: rgb(248, 243, 233, 0.692) !important; */
+  background-color: rgb(0, 0, 0, 0.5) !important;
+  color: white;
+  /* height: 20px !important; */
+  /* opacity: 0.98 ; */
+}
+.nav-link{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-style: hidden;
+}
+.nav-btn-drob:hover{
+  cursor: pointer;
+} 
+.nav-link:hover {
+  border-bottom-style: solid;
+  border-bottom-color: yellow;
+}
+#myDIV{
+  display: none;
+}
+.nav-min{
+  width: 40%;
+  /* margin-top: 5%; */
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  overflow-y: scroll;
+  z-index: 10000;
+  height: auto;
+  max-height: 500px;
+  box-shadow: 0px 0px 10px 0px rgb(252, 249, 249);
+  padding: 1%;
+}
+.nav-min-1{
+  position: relative;
+  height: auto;
+  float: left;
+  /* background-color: #194F98; */
+  text-align: center;
+  /* margin-left: 3%; */
+  /* margin-right: 3%; */
+  /* margin-bottom: 1%; */
+  max-width: 90%;
+}
+.nav-in-img{
+  /* position: relative; */
+  float: left;
+  height: auto;
+  max-height: 100px;
+  /* width: 50px; */
+  /* margin: 2%; */
+}
+.img-nav{
+  height: auto;
+  max-height: 100px;
+}
+.nav-min-tex{
+  float: left;
+  /* background-color: yellow; */
+  color: blue;
+  padding: 6.7%;
+  /* border: #ceda23; */
+  /* border-color: #ceda23; */
+}
+/* .bgcolor-scrolled{
+  background-color: rgb(248, 243, 233, 0.692) !important;
+  opacity: 0.98 ;
+} */
+.bgcolor-scrolled{
+  /* background-color: rgb(248, 243, 233, 0.692) !important; */
+  background-color: rgb(0, 0, 0, 0.5) !important;
+  color: white;
+  /* height: 20px !important; */
+  /* opacity: 0.98 ; */
+}
